@@ -1,6 +1,13 @@
 flask
 faker
 pandas
-vadersentiment
+pickle
+vaderSentiment
 nltk
-chatterbot
+string
+collections
+pprint
+translate
+spacy
+enchant
+langdetect
