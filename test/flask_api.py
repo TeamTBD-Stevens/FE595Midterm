@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, url_for
 import pandas as pd
-import pickle
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -8,8 +7,6 @@ import nltk
 import string
 from collections import Counter
 from pprint import pprint
-from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
 from translate import Translator
 import spacy
 import enchant
@@ -59,18 +56,6 @@ def user_rec():
         sample = request.form['message']
         tokens = [i.strip(string.punctuation) for i in sample.split(" ")]
         tags = nltk.pos_tag(tokens)
-
-    if 'AI_response' in checklist:
-        response = ''
-        if request.method == 'POST':
-            text = request.form['message']
-            BankBot = ChatBot(name='BankBot',
-                              read_only=False,
-                              logic_adapters=["chatterbot.logic.BestMatch"],
-                              storage_adapter="chatterbot.storage.SQLStorageAdapter")
-            corpus_trainer = ChatterBotCorpusTrainer(BankBot)
-            corpus_trainer.train("emotion")
-            response = str(BankBot.get_response(text))
 
     if 'translate_Chinese' in checklist:
         chinese = ''
