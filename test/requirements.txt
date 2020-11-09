@@ -2,3 +2,4 @@ flask
 faker
 pandas
 vadersentiment
+nltk
