@@ -1,7 +1,6 @@
 flask
 faker
 pandas
-pickle
 vaderSentiment
 nltk
 string
