@@ -31,5 +31,5 @@ NOTE: While most of the required packages to run this script have been placed on
 Example output
 --------------
 
-[![Screenshot-2020-11-09-212733.png](https://i.postimg.cc/NFPMQjBQ/Screenshot-2020-11-09-212733.png)](https://postimg.cc/y3cBPBDG)
+[![Screenshot-2020-11-09-213940.png](https://i.postimg.cc/1XKdF8fZ/Screenshot-2020-11-09-213940.png)](https://postimg.cc/sGvKdDYn)
 
